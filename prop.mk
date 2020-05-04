@@ -22,5 +22,4 @@ ro.adb.secure=0 \
 ro.secure=0 \
 ro.debuggable=1
 
-# maintainer
-ro.havoc.maintainer=Blacksuan19
+
