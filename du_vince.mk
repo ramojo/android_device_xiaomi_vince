@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The MSM-XtendedOS Project
+# Copyright (C) 2017 The Corvus-OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,18 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common MSM-XtendedOS stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-
-# official tag
-XTENDED_BUILD_TYPE := OFFICIAL
-
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xtended.maintainer=Mahmoud_Ayman
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := xtended_vince
+PRODUCT_NAME := du_vince
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
